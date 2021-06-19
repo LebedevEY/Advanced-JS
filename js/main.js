@@ -77,7 +77,9 @@ class CartItem extends ProductItem {
             this.quantyti = quantyti;
         }
 
-        addQuantyti();
+        addQuantyti() {
+            
+        };
 }
 
 let list = new ProductList();
