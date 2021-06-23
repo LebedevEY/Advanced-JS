@@ -78,7 +78,7 @@ class CartItem extends ProductItem {
         }
 
         addQuantyti() {
-            
+
         };
 }
 

@@ -14,6 +14,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Downloads/2/project/js/main.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/js/main.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1uAggV4FxMeuxAYevjfUXEZKzOI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -43,7 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1624113922004</updated>
       <workItem from="1624113925974" duration="6739000" />
-      <workItem from="1624121829495" duration="6000" />
+      <workItem from="1624121829495" duration="134000" />
     </task>
     <servers />
   </component>
