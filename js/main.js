@@ -1,6 +1,6 @@
 
 
-// Четвёртое доиашнее задание
+// Четвёртое домашнее задание
 
 var text = (document.getElementById('first-text'));
 var newText = text.outerHTML.replace(/'/g, '\"');
