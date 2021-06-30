@@ -11,19 +11,28 @@
     <header>
         <div class="logo">E-shop</div>
         <div class="cart">
-            <form action="#" class="search-form">
-                <input type="text" class="search-field" >
+            <form action="#" class="search-form" @submit.prevent="filter(userSearch)">
+                <input v-model="userSearch" type="text" class="search-field">
                 <button class="btn-search" type="submit">
                     <i class="fas fa-search"></i>
                 </button>
             </form>
-            <button class="btn-cart" type="button">Корзина</button>
-            <div class="cart-block invisible"></div>
+            <button @click="isVisibleCart()" class="btn-cart" type="button">Корзина</button>
+            <div id="cart" class="cart-block invisible">
+                <div class="cart-item" v-for="product of cart" :key="product.id_product">
+                    <img :src="imgCatalog" alt="Some IMG">
+                    <div class="desc">
+                        <h3>{{product.product_name}}</h3>
+                        <p>{{product.price}} $</p>
+                        <p>Количество: {{product.quantity}}</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <div class="products">
-            <div class="product-item" v-for="product of products" :key="product.id_product">
+            <div class="product-item" v-for="product of filtered" :key="product.id_product">
                 <img :src="imgCatalog" alt="Some img">
                 <div class="desc">
                     <h3>{{product.product_name}}</h3>
@@ -39,18 +48,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
-<!--<div class="cart-item" data-id="${this.id_product}">-->
-    <!--<div class="product-bio">-->
-        <!--<img src="${this.img}" alt="Some image">-->
-        <!--<div class="product-desc">-->
-            <!--<p class="product-title">${this.product_name}</p>-->
-            <!--<p class="product-quantity">Quantity: ${this.quantity}</p>-->
-            <!--<p class="product-single-price">$${this.price} each</p>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="right-block">-->
-        <!--<p class="product-price">${this.quantity*this.price}</p>-->
-        <!--<button class="del-btn" data-id="${this.id_product}">&times;</button>-->
-    <!--</div>-->
-<!--</div>-->
