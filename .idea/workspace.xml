@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc7a31e3-f69a-40f5-9567-bfa48ec10024" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/func.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_express/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/func.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_express/index.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +34,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/Downloads/2_5384356252795014441/js/main.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/4/project/js/main.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/my_express/index.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/script.js" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/func.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1uUbIraJ7fruztv7WGvLTQAs0yP" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -79,7 +78,7 @@
       <workItem from="1625302267824" duration="9133000" />
       <workItem from="1625422273410" duration="155000" />
       <workItem from="1625509967404" duration="2871000" />
-      <workItem from="1625587465239" duration="6312000" />
+      <workItem from="1625587465239" duration="6575000" />
     </task>
     <servers />
   </component>
