@@ -1,6 +1,7 @@
 body{
     font-family: 'SF Pro Display', sans-serif;
 }
+
 header{
     display: flex;
     background-color: #2f2a2d;
@@ -8,14 +9,16 @@ header{
     color: #fafafa;
     padding: 30px 80px;
 }
+
 button:focus{
     outline: none;
 }
-.logo{
 
+.logo{
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .btn-cart{
     background-color: #fafafa;
     padding: 10px 20px;
@@ -33,16 +36,11 @@ button:focus{
 .btn-cart, .logo{
     align-self: center;
 }
-/*.products {*/
-/*display: flex;*/
-/*justify-content: space-between;*/
-/*flex-wrap: wrap;*/
-/*padding: 40px 80px;*/
-/*}*/
+
 .products{
     column-gap: 30px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(4, 200px);
     grid-template-rows: 1fr;
     padding: 40px 80px;
     justify-content: space-between;
@@ -80,7 +78,7 @@ img {
     background-color: white;
     padding: 20px;
     color: black;
-    width: 300px;
+    min-width: 400px;
 }
 
 .invisible{
@@ -126,6 +124,7 @@ img {
 .cart-item img{
     align-self: flex-start;
     margin-right: 15px;
+    width: 40%;
 }
 .product-single-price{
     color: #474747;
