@@ -16,10 +16,8 @@ const handler = (req, res, action, file) => {
             fs.writeFile(file, newCart, (err) => {
                 if(err){
                     res.sendStatus(404, JSON.stringify({result:0, text: err}));
-                    console.log('Не работает')
                 } else {
                     res.send(JSON.stringify({result: 1}))
-                    console.log('Работает!')
                 }
             })
         }

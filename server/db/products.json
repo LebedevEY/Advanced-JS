@@ -1,42 +1,56 @@
 [
   {
-    "id_product": 1,
-    "product_name": "Клавиатура",
-    "price": 1600
+    "id": 1,
+    "name": "product 1",
+    "price": 52.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
   },
   {
-    "id_product": 2,
-    "product_name": "Геймпад",
-    "price": 3000
+    "id": 2,
+    "name": "product 2",
+    "price": 66.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
   },
   {
-    "id_product": 3,
-    "product_name": "Ноутбук",
-    "price": 45600
+    "id": 3,
+    "name": "product 3",
+    "price": 78.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
   },
   {
-    "id_product": 4,
-    "product_name": "Мышка",
-    "price": 1000
+    "id": 4,
+    "name": "product 4",
+    "price": 25.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
   },
   {
-    "id_product": 5,
-    "product_name": "Принтер",
-    "price": 17000
+    "id": 5,
+    "name": "product 5",
+    "price": 85.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
   },
   {
-    "id_product": 6,
-    "product_name": "Веб-камера",
-    "price": 700
+    "id": 6,
+    "name": "product 6",
+    "price": 17.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
   },
   {
-    "id_product": 7,
-    "product_name": "Наушники",
-    "price": 3500
+    "id": 7,
+    "name": "product 7",
+    "price": 34.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
   },
   {
-    "id_product": 8,
-    "product_name": "Видеокарта",
-    "price": 250000
+    "id": 8,
+    "name": "product 8",
+    "price": 47.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
+  },
+  {
+    "id": 9,
+    "name": "product 9",
+    "price": 55.00,
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis at facere, consequuntur error a corrupti enim magni quae iure sit provident, molestiae quia totam sunt consequatur dicta! Fugiat, voluptas quidem?"
   }
 ]

@@ -1,0 +1,152 @@
+@media (max-width: 1023px){
+    .center {
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .promo {
+        .promo__right {
+            .promo__content {
+                .promo__h1{
+                    font-size: 44px;
+                    line-height: 52.8px;
+                }
+                
+                .promo__heading {
+                    font-size: 24px;
+                    line-height: 28.8px;
+                }
+            }
+        }
+    }
+
+    .products__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+
+        .hide {
+            display: none;
+        }
+    }
+
+    .product__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 129px;
+
+        .hide {
+            display: none;
+        }
+    }
+
+    .sale {
+        &__box {
+            margin-bottom: 20px;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 20px;
+        }
+    }   
+
+    .footer__advantages {
+        flex-direction: column;
+
+        .advantages__item {
+            margin-top: 48px;
+    
+            &:last-child {
+                margin-bottom: 64px;
+            }
+        }
+    }
+
+    .footer__review {
+        flex-direction: column;
+        padding-top: 64px;
+        padding-bottom: 140px;
+
+        .footer__form {
+
+            .form__h3 {
+                font-size: 24px;
+                line-height: 29px;
+            }
+    
+            .form__text {
+                font-size: 18px;
+                line-height: 27.4px;
+            }
+        }
+    }
+
+    .details__filter {
+        .filter__right {
+            justify-content: flex-end;
+        }
+    }
+
+    .description {
+        width: auto;
+        max-width: 768px;
+        position: static;
+        transform: none;
+
+        &__text {
+            padding: 0 8px 0;
+        }
+
+        &__hr-2 {
+            width: 84%;
+            
+        }
+    }
+
+    .cart {
+        flex-direction: column;
+
+        &__left {
+            width: 100%;
+            margin-bottom: 64px;
+        }
+
+        &__right {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+
+            &__total {
+                margin-top: 39px;
+            }
+        }
+    }
+
+    .registration {
+
+        &__left {
+            margin-right: 22px;
+        }
+
+        &__right {
+
+            &__heading {
+                font-size: 16px;
+                line-height: 19px;
+                margin-bottom: 32px;
+            }
+
+            &__text {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            &__item {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+}
