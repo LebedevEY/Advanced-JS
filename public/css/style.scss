@@ -44,6 +44,10 @@ body {
     padding-right: calc(50% - 570px);
 }
 
+.hide {
+    display: none;
+}
+
 .tac {
     text-align: center;
 }
@@ -313,6 +317,7 @@ body {
                 font-size: 14px;
                 line-height: 17px;
                 color: #FFFFFF;
+                background: none;
                 position: absolute;
                 top: 188px;
                 left: 111px;
@@ -373,6 +378,10 @@ body {
             color: #fff;
         }
     }
+}
+
+.cart__text {
+    font-family: Lato, Sans-Serif;
 }
 
 .footer {
@@ -483,7 +492,7 @@ body {
                 transition: .2s;
 
                 &:hover {
-                    background: $pink - #111;
+                    background: pink;
                     cursor: pointer;
                 }
             }

@@ -3,7 +3,6 @@ Vue.component('products', {
        return {
            filtered: [],
            products: [],
-           cartItems: []
        }
    },
     mounted(){
@@ -21,34 +20,13 @@ Vue.component('products', {
             let regexp = new RegExp(userSearch, 'i');
             this.filtered = this.products.filter(el => regexp.test(el.name));
         },
-
-        addProduct(item){
-            let find = this.cartItems.find(el => el.id === item.id);
-            if(find){
-                this.$parent.putJson(`/api/cart/${find.id}`, {quantity: 1})
-                    .then(data => {
-                        if(data.result === 1){
-                            find.quantity++;
-                        }
-                    })
-            } else {
-                const prod = Object.assign({quantity: 1}, item);
-                this.$parent.postJson(`/api/cart`, prod)
-                    .then(data => {
-                        if(data.result === 1){
-                            this.cartItems.push(prod);
-                        }
-                    })
-            }
-            console.log(this.cartItems);
-        }
     },
    template: `<div class="products__box center">
                 <product v-for="item of filtered" 
-                :key="item.id_product" 
+                :key="item.id" 
                 :img="item.img"
                 :product="item"
-                @add-product="$parent.$refs.products.addProduct"></product>
+                @add-product="$parent.$refs.cart.addProduct"></product>
                </div>`
 });
 Vue.component('product', {
