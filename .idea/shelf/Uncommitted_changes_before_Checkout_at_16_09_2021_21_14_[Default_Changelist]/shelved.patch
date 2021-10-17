@@ -1,0 +1,17 @@
+Index: public/js/ErrorComp.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Vue.component('error', {\r\n    data(){\r\n        return {\r\n          text: ''\r\n        }\r\n    },\r\n    computed: {\r\n      isVisible(){\r\n          return this.text !== ''\r\n      }\r\n    },\r\n    template: `\r\n    <div class=\"error-block\" v-if=\"isVisible\">\r\n        <p class=\"error-msg\">\r\n        <button class=\"close-btn\" @click=\"text=''\">&times;</button>\r\n        {{ text }}\r\n</p>\r\n</div>\r\n    `\r\n})
+===================================================================
+diff --git a/public/js/ErrorComp.js b/public/js/ErrorComp.js
+--- a/public/js/ErrorComp.js	
++++ b/public/js/ErrorComp.js	
+@@ -15,6 +15,5 @@
+         <button class="close-btn" @click="text=''">&times;</button>
+         {{ text }}
+ </p>
+-</div>
+-    `
++</div>`
+ })
+\ No newline at end of file
