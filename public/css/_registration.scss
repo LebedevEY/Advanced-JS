@@ -1,0 +1,136 @@
+.registration {
+    display: flex;
+    margin: 64px 0 94px;
+    justify-content: space-between;
+
+    &__left {
+        width: 360px;
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: inherit;
+    
+            &_sex {
+                margin: 31px 0 33px;
+                display: flex;
+    
+                &-input {
+                    font-weight: 300;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #000000;
+                    display: flex;
+                    align-items: center;
+    
+                    &:not(:first-child) {
+                        margin-left: 20px;
+                    }
+
+                    label {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &__heading {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        &__input {
+            padding: 13px 18px 16px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: $black;
+            margin-top: 21px;
+            border: 1px solid #A4A4A4;
+            
+    
+            &:focus {
+                outline: none;
+            }
+    
+            &::-webkit-input-placeholder {
+                font-family: Lato;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #B1B1B1;
+            }
+        }
+
+        &__button {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            background-color: $pink;
+            padding: 16px 29px;
+            border: none;
+            outline: none;
+            width: fit-content;
+            transition: .2s;
+        
+            &:hover {
+                cursor: pointer;
+                background-color: $listColor;
+            }
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+            margin: 15px 0 39px;
+        }
+    }
+
+    &__right {
+        max-width: 652px;
+
+        &__heading {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 22px;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+            margin-bottom: 21px;
+        }
+
+        &__list {
+            list-style-type: none;
+        }
+
+        &__item {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+
+            &::before {
+                content: url(../img/list_style_type.svg);
+                margin-right: 23px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

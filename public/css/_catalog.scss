@@ -1,0 +1,202 @@
+@import "var";
+
+
+.page__name {
+    height: 148px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F8F3F4;
+
+    .breadcrumb {
+        list-style-type: none;
+
+        li {
+            display: inline;
+
+            a {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #636363;
+                text-transform: uppercase;
+            }
+
+            a:hover {
+                color: $pink;
+            }
+        }
+
+        .active {
+            display: inline;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: $pink;
+            text-transform: uppercase;
+        }
+    }
+
+    .page__heading {
+        font-size: 24px;
+        line-height: 29px;
+        color: $pink;
+    }
+}
+
+.details__filter {
+    display: flex;
+    align-items: center;
+
+    .filter {
+        position: relative;
+        height: 48px;
+        z-index: 2;
+
+        &_mobile {
+            display: none;
+        }
+
+        &__name {
+            outline: none;
+            display: flex;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            z-index: 2;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        &__name::after {
+            content: url(../img/filter_icon.svg);
+            padding-left: 11px;
+
+        }
+
+        &__main {
+            position: absolute;
+            padding: 13px 16px 16px;
+            box-sizing: border-box;
+            background-color: white;
+            z-index: 2;
+
+            &[open] {
+                box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+                width: 360px;
+            }
+
+            &[open] .filter__name {
+                color: $pink;
+
+                &::after {
+                    content: url(../img/filter_icon_pink.svg);
+                    padding-left: 11px;
+        
+                }
+            }
+        }
+
+        &__category {
+            outline: none;
+            color: $pink;
+            border-left: 5px solid $pink;
+            height: 37px;
+            margin: 16px 0 24px;
+            display: flex;
+            align-items: center;
+
+            &__name {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                padding-left: 11px;
+                border-bottom: 1px solid #EBEBEB;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            &__list {
+                list-style-type: none;
+            }
+
+            &__link {
+                display: block;
+                font-size: 14px;
+                line-height: 17px;
+                color: #6F6E6E;
+                margin: 0 34px 11px;
+
+                &:hover {
+                    color: $listColor;
+                }
+            }
+        }
+    }
+    
+    .filter__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0 65px;
+        position: relative;
+        width: 100%;
+    
+        .size__list {
+            position: absolute;
+            display: block;
+            background-color: white;
+            left: 52%;
+            z-index: 5;
+            width: 80px;
+            padding: 10px;
+            box-sizing: border-box;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+        }
+        
+        summary {
+            display: flex;
+            margin-left: 28px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+    
+        summary:focus {
+            outline: 0;
+        }
+              
+        summary::after {
+            content: url(../img/list_icon.svg);
+            padding-left: 10px;
+        }
+            
+        details[open] > summary::after {
+            content: url(../img/list_icon.svg);
+        }
+    }
+}
+
+.slider {
+    height: 188px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__img {
+        width: 284px;
+        height: 44px;
+        margin-top: 48px;
+    }
+}
